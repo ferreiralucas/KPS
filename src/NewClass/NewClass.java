@@ -20,7 +20,7 @@ public class NewClass {
     private  String URI = "xmldb:exist://localhost:8080/exist/xmlrpc";
     private  String driver = "org.exist.xmldb.DatabaseImpl";
     
-    private String[] aa(String Query) throws Exception{              
+    public String[] aa(String Query) throws Exception{              
         Class cl = Class.forName(driver);
         String[] Value2 = null;
         Database database = (Database) cl.newInstance();
@@ -37,5 +37,9 @@ public class NewClass {
     }
         return Value2;
     }
-}
 
+
+public static void main(String[] args) throws Exception {}
+
+
+}
